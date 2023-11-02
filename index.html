@@ -199,7 +199,7 @@
     })
       .then((response) => {
         if (response.status === 400) {
-          throw new Error("Не может быть меньше 3-ёх символов")
+          throw new Error("Не может быть добавлено меньше 3-ёх символов")
         }
         if (response.status === 500) {
           throw new Error("Неполадки с сервером")

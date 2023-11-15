@@ -10,7 +10,7 @@ import { renderText } from "./renderText.js";
 
 
 const listElement = document.getElementById("list");
-const commentElement = document.getElementById("add-comment");
+
 const loaderElement = document.getElementById("loader");
 let commentsArray = [];
 
@@ -48,8 +48,11 @@ getApi();
 
 const commentClick = () => {
   const userComments = document.querySelectorAll(".comment");
+
   for (const userComment of userComments) {
+    
       const addTextInTextArea = () => {
+        const commentElement = document.getElementById("add-comment");
           const commentBodyText = userComment.querySelector(".comment-body")
               .innerText;
           const commentNameText = userComment.querySelector(".comment-name")

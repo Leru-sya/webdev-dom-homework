@@ -99,6 +99,10 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .text-form{
+    padding: 20px;
+    
+  }
 
   .add-form-name,
   .add-form-text {
@@ -112,7 +116,19 @@ body {
     width: 300px;
     padding: 11px 22px;
   }
+  .input-login{
+    width: auto;
+  }
+  .login-button{
+    display: flex;
+    flex-direction: column;
+  }
 
+  .login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   .add-form-text {
     margin-top: 12px;
     padding: 22px;
